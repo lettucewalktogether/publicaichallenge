@@ -1,25 +1,40 @@
-# Governing Authority: KCMO Administrative Regulation 3-27 — Innovation Partnerships
+# Assessment: KCMO AR 3-27 — Innovation Partnerships *(evaluated and set aside)*
 
 **City of Kansas City, Missouri**
-**The local authority and legal vehicle under which every public AI innovation challenge is run**
+**Status: NOT the vehicle for public innovation challenges. Retained as background.**
 
 ---
 
-## Why this document exists
+## Decision and rationale
 
-The PPG panel was explicit that the federal precedents (FAR, DARPA, NASA COTS, SBIR)
-are *reference models only:* **"For local government, these are reference models. Our
-authority still comes from our own charter, ordinances, and procurement rules."**
+AR 3-27 (Innovation Partnerships, 2013) was evaluated as a possible vehicle for public
+innovation challenges and **set aside**. Challenges proceed instead as standard
+procurement actions, with the instrument and authority set per-instance by the
+Procurement Division and the Law Department (see
+[`mechanism-and-pathway.md`](./mechanism-and-pathway.md) §1, P1).
 
-**AR 3-27 is that authority.** It is KCMO's own, already-adopted policy for testing,
-evaluating, and demonstrating innovative solutions with outside partners — and it
-supplies the exact thing the federal set could only analogize to: a **local legal
-vehicle** (the Innovation Partnership Agreement) that lets the City stage commitment,
-open its data and facilities temporarily, and walk away on performance.
+**Three reasons:**
 
-The [Framework](./framework.md) is *how* to run a rigorous, AI-appropriate, staged
-challenge. **AR 3-27 is what makes it lawful and executable at KCMO.** The framework
-operates *inside* AR 3-27, not beside it.
+1. **AR 3-27 is inbound-only.** §6.3.1 requires the initial cost/benefit assessment to be
+   *"prepared by the potential innovation partner"* — a process designed for a company
+   approaching the City with an **unsolicited** proposal. A challenge is the **City going
+   to market**, inverting the direction the regulation assumes.
+
+2. **It contains no competitive selection method.** Its §6.3.2 criteria decide *whether to
+   enter a partnership at all* — bilateral, one partner. Nothing governs choosing among
+   multiple competing teams with comparative scoring, which is the core of a challenge.
+
+3. **Amendment is not on the timeline.** Revising the AR would take substantially longer
+   than the challenge itself, and amending a 2013 general-purpose regulation to carry
+   challenge-specific and AI-specific machinery would make it worse at both jobs.
+
+**This document is retained** so the evaluation is on the record — if Procurement, Law, or
+Council asks whether AR 3-27 was considered, the answer is documented rather than
+re-litigated. The analysis below also remains useful if the City later decides to build a
+standing innovation-partnership pathway.
+
+> **Everything below describes AR 3-27 as written.** It does not describe how challenges
+> are currently run. For that, see [`mechanism-and-pathway.md`](./mechanism-and-pathway.md).
 
 ---
 
@@ -134,52 +149,42 @@ performance measures … should be forwarded to the Innovation Partnerships Team
 
 ---
 
-## 6. Crosswalk — AR 3-27 → Framework
+## 6. What AR 3-27 lacks for challenge use
 
-| AR 3-27 element | Framework component it authorizes / grounds |
-|-----------------|---------------------------------------------|
-| §3.1 Innovation Partnership Agreement; temporary use of City data/facilities | The pilot **vehicle** and staged **data access** (P5); terms in §8 attach to this agreement |
-| §4.1.2 Innovation/Testing · §4.1.4 Innovative Solution (with "performance component") | The **challenge type** and the requirement that entries have measurable performance → gates |
-| §5.1 Goals · §5.2 Council Priorities · §6.3.2 criteria | **Gate 0** content (problem, authority, benefit/cost, priority alignment) |
-| §6.2 Innovation Partnerships Team; §6.3.3 City Manager approval | The **approval chain** above the framework roles (§6) |
-| §6.3.1 initial cost/benefit + risk assessment | Framework **risk tier (§3)** and Phase 0 framing |
-| §6.4 performance measures set at outset, evaluated at conclusion | The **gate ladder and scoring (§5)** — a staged implementation of §6.4 |
+Beyond the two structural mismatches in the decision above, AR 3-27 is a general 2013
+policy that would need substantial supplementation even if the direction problem were
+solved:
 
----
+| Gap | Note |
+|-----|------|
+| **No competitive selection or scoring method** | The decisive gap. §6.3.2 evaluates whether to enter *a* partnership, not how to rank several. |
+| **No AI-specific provisions** | Nothing on model transparency, equity/bias testing, training-data disclosure, model versioning, or AI data rights. |
+| **Single-point evaluation** | §6.4 sets measures at the outset and reports at conclusion — no staged checkpoints before commitment grows. |
+| **No solicitation format** | No announcement structure, proposal requirements, or evaluation machinery. |
+| **Stale team composition** | §6.2 names CMO, Mayor/Council, Finance, Law, and Procurement — no CDO, no Data KC, no cybersecurity, none of which were in place in 2013. |
 
-## 7. What AR 3-27 does *not* cover — and what supplements it
-
-AR 3-27 is a **general** innovation-partnership policy from 2013. It is the authority and
-the vehicle, but it is intentionally generic. Three gaps must be filled by the framework
-and its reference models:
-
-| Gap in AR 3-27 | Filled by |
-|----------------|-----------|
-| **No AI-specific provisions** — nothing on model transparency, bias/equity testing, training-data disclosure, model versioning, or AI data-rights. | Framework **Governance Readiness pack (§7.2)** + the **D.C. AI Procurement Handbook** content (risk tiers, vendor disclosure, monitoring clauses). |
-| **Single-point evaluation** — measures at start, report at end (§6.4); no staged checkpoints before commitment grows. | Framework **staged gate ladder (§5)** and monotonic-commitment invariant (§1) — the federal staging precedents (FAR 39.103, SBIR, COTS) inform the discipline. |
-| **Light on solicitation format** — no challenge-announcement structure or scoring model. | Framework **§5–§7** + the **Challenge-Based Acquisition** announcement outline; **15 U.S.C. §3719** for announcement elements and judge-conflict rules. |
-| **Data/IP terms not fully specified for AI.** | Framework **§8** fixed terms (city controls data/results; vendor keeps background tech; no training unrelated models; portability/exit), written into the Innovation Partnership Agreement. |
-
-**Net:** AR 3-27 authorizes and houses the challenge; the framework makes it
-AI-appropriate and evidence-staged; the federal and municipal references supply battle-
-tested detail for the parts AR 3-27 leaves open.
+All of these are supplied by [`mechanism-and-pathway.md`](./mechanism-and-pathway.md).
 
 ---
 
-## 8. Compliance checklist for a challenge run under AR 3-27
+## 7. If the City revisits this later
 
-1. **Classify the partnership type** (§4.1) — usually *Innovation/Testing* seeking an *Innovative Solution*; flag as a *Partnership Development Opportunity* if it advances AdvanceKC.
-2. **Forward to the Innovation Partnerships Team** (§6.3.1) before engaging partners.
-3. **Prepare the initial cost/benefit + risk assessment** (§6.3.1) — feeds the framework risk tier and Gate 0.
-4. **Confirm Gate 0 against AR 3-27 criteria** (§6.3.2): Council-Priority/mission/core-service consistency, and benefit-vs-cost balance.
-5. **Establish performance measures up front** (§6.4) — express them as the framework's gate thresholds and scoring weights.
-6. **Execute the Innovation Partnership Agreement** as the vehicle; attach the §8 data/IP terms.
-7. **Route advance/stop decisions through the Team to the City Manager** (§6.3.3) for approval at each commitment increase.
-8. **File the concluding evaluation report** against the stated measures with the Team (§6.4); the Team tracks/reports and reports to Council (§6.2).
+Should KCMO decide to build a standing innovation-partnership pathway, the useful
+elements of AR 3-27 are:
+
+- **§3.1** — the concept of temporary, scoped use of City data, facilities, and
+  infrastructure under an agreement, which is a genuinely useful instrument for
+  City-initiated pilots if paired with a competitive selection method.
+- **§6.4** — performance measures established at the outset and evaluated at conclusion.
+  This is the seed of gated evaluation; the mechanism spec extends it into a staged ladder.
+- **§6.2** — a standing cross-departmental team as a coordination and tracking body,
+  if reconstituted to include CDO, Data KC, technology, and security.
+
+A companion regulation plus a standing administrative procedure would likely serve better
+than amending AR 3-27 in place.
 
 ---
 
 *Source: City of Kansas City, Missouri, Administrative Regulation No. 3-27,
-"Innovation Partnerships," effective July 23, 2013. Read together with
-[`framework.md`](./framework.md) (the staged process) and its §9 precedent crosswalk
-(the reference models).*
+"Innovation Partnerships," effective July 23, 2013. Superseded for challenge purposes by
+[`mechanism-and-pathway.md`](./mechanism-and-pathway.md).*

@@ -1,85 +1,77 @@
-# CLAUDE.md — KCMO Public AI Innovation Challenge
+# CLAUDE.md — KCMO Public Innovation Challenge
 
-Project memory for this repository. Read this before drafting, editing, or advising on
-any public innovation challenge — **AI or otherwise** — for the City of Kansas City,
-Missouri (KCMO).
+Project memory. Read before drafting, editing, or advising on any public innovation
+challenge — **AI or otherwise** — for the City of Kansas City, Missouri.
 
 ## What this repo is
 
-A reusable, staged-acquisition **framework** for running public innovation challenges,
-plus worked instances. Core rule: **buy evidence in stages; increase commitment (scope,
-data, funding) only after a defined gate is passed.**
+A reusable specification for public innovation challenges, split into three parts so the
+reusable half never gets tangled with the one-off half.
 
-- [`docs/framework.md`](./docs/framework.md) — the reusable algorithm (parameters, pipeline, gates, scoring, roles, terms).
-- [`docs/authority-ar-3-27.md`](./docs/authority-ar-3-27.md) — the governing authority in depth.
-- [`docs/instance-cpd-residential-plan-review.md`](./docs/instance-cpd-residential-plan-review.md) — first worked instance.
+| Part | File | Reusable? |
+|------|------|:---:|
+| **Part 1 — The Challenge** (problem, domain, data, success) | `docs/challenge-*.md` | No — new each time |
+| **Part 2A — Pathway** (stages, gates, decision points) | `docs/mechanism-and-pathway.md` Part A | Yes |
+| **Part 2B — Mechanism** (rules, evaluation, terms, governance) | `docs/mechanism-and-pathway.md` Part B | Yes |
 
-## Standing rules for every challenge
+Core rule: **buy evidence in stages; increase commitment only after a gate is passed.**
 
-1. **Governing authority is local.** Every challenge is executed as an **Innovation
-   Partnership under KCMO AR 3-27**. Cite it as the authority; treat all federal and
-   peer-city references as **reference models, not authority**.
-2. **Route through the AR 3-27 chain.** Classify the partnership type, forward to the
-   **Innovation Partnerships Team**, and obtain **City Manager** approval at each
-   commitment increase (AR 3-27 §6.2 / §6.3.3).
-3. **Gates are the AR 3-27 performance measures** (§6.4), checked in stages.
-4. **Confirm authority with Law.** Statutory/charter citations below marked *(verify)*
-   must be confirmed by the Law Department before they appear in a binding document.
-5. **Keep this stack current.** When a new authority or precedent is identified, add it
-   to the table below so future challenges inherit it.
+## Standing rules
 
----
+1. **Keep the parts separate.** Domain specifics go in Part 1. Anything that would be true
+   for a different department's challenge goes in Part 2. This separation is the point.
+2. **The spec is authority-neutral.** The instrument and procurement authority are set
+   per-instance by Procurement + Law and recorded as parameter **P1**. Do not assert an
+   authority basis in the spec.
+3. **AR 3-27 is not the vehicle.** Evaluated and set aside — it is inbound-only (assumes
+   an unsolicited partner proposal) and has no competitive selection method. Do not
+   reintroduce it as governing authority. Rationale: `docs/ar-3-27-assessment.md`.
+4. **No gate without a threshold.** "Acceptable performance" is not a criterion. Gates
+   carry numeric or objectively testable pass conditions, set before announcement.
+5. **No artifact, no score.** Every scored claim maps to a required deliverable.
+6. **Baseline before announcement.** Improvement is unprovable without measured current
+   state. This is the most common cause of failed pilots.
+7. **Stopping is a valid outcome.** A challenge that concludes without advancing a team,
+   for a stipend and a documented "no," succeeded.
+8. **Keep the stack current.** New precedent or authority → add it below.
 
-## The authority stack
+## Ownership context
 
-### Tier 1 — Local (binding)
+Chief Digital Officer owns this, with Data KC. Procurement is the intended long-term
+owner of the mechanism as a standard template. Sponsoring departments own their
+Part 1 and the service outcome.
 
-| Authority | Role |
-|-----------|------|
-| **KCMO Administrative Regulation 3-27, "Innovation Partnerships"** (eff. 7/23/2013; approved by City Manager) | **Primary governing authority and vehicle.** Innovation Partnership Agreement; temporary use of City data/facilities; Innovation Partnerships Team; City Manager approval; performance measures. |
-| **KCMO City Charter** *(verify relevant articles)* | City Manager authority; contracting/administrative authority underpinning AR 3-27. |
-| **KCMO Code of Ordinances — procurement provisions** *(verify chapter/sections)* | Procurement rules the AR 3-27 process defers to (General Services – Procurement Division). |
-| **City Council Priorities / AdvanceKC** | AR 3-27 §5–§6.3.2 require alignment; feed Gate 0. |
+## Design precedents
 
-### Tier 2 — State of Missouri (binding)
+Reference models, not KCMO legal authority. Shared discipline: *define the need, limit
+the first commitment, evaluate evidence, expand only after performance.*
 
-| Authority | Role |
-|-----------|------|
-| **Missouri Sunshine Law — RSMo Chapter 610** *(verify sections)* | Open records/meetings; drives public-records, disclosure, and retention obligations in the Governance Readiness pack. |
-| **Missouri public-records retention requirements** *(verify — Secretary of State / Local Records)* | Records retention/scheduling for challenge artifacts and AI outputs. |
-| **Missouri municipal procurement / cooperative-agreement statutes (RSMo)** *(verify with Law)* | State-law bounds on the Innovation Partnership Agreement and any resulting operating contract. |
-
-> The state tier is deliberately marked *(verify)*: these categories are known to be
-> relevant, but exact RSMo sections must be confirmed by the Law Department before use.
-
-### Tier 3 — Federal & peer-city reference models (informative, not binding)
-
-Shared discipline: *define the need, limit the first commitment, evaluate evidence,
-expand only after performance.* Full crosswalk in [`docs/framework.md`](./docs/framework.md) §9.
-
-**Federal (from the PPG "Purchasing Responsible AI" panel):**
-- **FAR 1.102(d)** — guiding principles / sound business judgment.
-- **FAR 39.103** — modular contracting (staged, interoperable increments).
-- **Challenge-Based Acquisition** — MITRE, Version 5 (2020) — the announcement how-to.
-- **DARPA Grand Challenge / 10 U.S.C. §4025** — prizes for demonstrated achievement.
-- **NASA COTS** — Space Act Agreements; funded milestones (NASA/SP-2014-617).
-- **SBIR Phase I / II / III** — 15 U.S.C. §638; commitment rises with evidence.
-- **GAO-26-107859** (Apr 2026) — AI-acquisition lessons learned.
-
-**Federal (additional mechanism references):**
-- **15 U.S.C. §3719** — prize competitions (America COMPETES); announcement elements, participant-IP default, judge conflict rules.
-- **51 U.S.C. §20113** — NASA Space Act Agreement authority (the funded-partnership vehicle analogue).
-- **FAR Part 12** — acquisition of commercial products/services (buying the proven winner).
+**Federal:**
+- **FAR 1.102(d)** — sound business judgment where not prohibited
+- **FAR 39.103** — modular contracting; separately testable increments
+- **Challenge-Based Acquisition** — MITRE v5 (2020); the announcement how-to
+- **DARPA Grand Challenge / 10 U.S.C. §4025** — pay for demonstrated achievement
+- **NASA COTS** — Space Act Agreements; funded milestones (NASA/SP-2014-617)
+- **SBIR Phase I/II/III** — 15 U.S.C. §638; commitment rises with evidence
+- **15 U.S.C. §3719** — prize competitions; announcement elements, participant-IP default, judge conflict rules
+- **51 U.S.C. §20113** — Space Act Agreement authority
+- **FAR Part 12** — commercial acquisition; buying the proven winner
+- **GAO-26-107859** (Apr 2026) — AI-acquisition lessons learned
 
 **Peer municipalities:**
-- **D.C. Artificial Intelligence Procurement Handbook** — AI-specific municipal guidance (risk tiers, vendor disclosure, monitoring clauses).
-- **City of Long Beach** — Smart City Challenge (municipal challenge front-end).
-- **Miami-Dade Innovation Authority** — dedicated challenge institution; funnel (3 of 136); funded pilots ($100k each).
+- **D.C. AI Procurement Handbook** — risk tiers, vendor disclosure, contract-embedded monitoring
+- **City of Long Beach** — Smart City Challenge; municipal challenge front-end
+- **Miami-Dade Innovation Authority** — dedicated challenge institution; 3-of-136 funnel; funded pilots
 
----
+**Missouri / local (verify with Law before citing in binding documents):**
+- Missouri Sunshine Law — RSMo Ch. 610 — records, proposal confidentiality, retention
+- KCMO Charter and Code procurement provisions
+- MBE/WBE participation goals and local preference policies
 
-## Source documents (in this project's history)
+## Source documents
 
-- CPD Public AI Innovation Challenge mind map.
-- "Purchasing Responsible AI" panel talking points (Partners for Public Good / PEN, Andrew Ngui, July 22, 2026).
-- KCMO AR 3-27, "Innovation Partnerships" (eff. July 23, 2013).
+- CPD Public AI Innovation Challenge mind map
+- CPD Public Innovation Challenge description (May 2026)
+- CPD Public AI Innovation Challenge Working Document R3 (Aug 2026) — the combined draft this spec was extracted from
+- "Purchasing Responsible AI" panel talking points (PPG / PEN, July 22, 2026)
+- KCMO AR 3-27, "Innovation Partnerships" (2013) — assessed, set aside
