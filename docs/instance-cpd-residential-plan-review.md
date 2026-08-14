@@ -12,6 +12,16 @@ than seven parallel lists. **The framework is the reusable structure; this is on
 
 ---
 
+## 0. Governing authority
+
+This challenge runs as an **Innovation Partnership under KCMO AR 3-27** — most naturally
+an *Innovation/Testing* partnership (§4.1.2) seeking an *Innovative Solution* with a
+measurable performance component (§4.1.4), and a candidate *Partnership Development
+Opportunity* (§4.1.3) to the extent it supports local innovators / AdvanceKC. It is
+forwarded to the **Innovation Partnerships Team** and approved by the **City Manager**
+(§6.2 / §6.3.3); the Stage-1/Stage-2 gates below are the *performance measures* required
+by §6.4, checked in stages. See [`authority-ar-3-27.md`](./authority-ar-3-27.md).
+
 ## 1. Problem framing (Phase 0)
 
 - **Service problem (P1):** Quality Control Review (QCR) intake and residential plan
@@ -49,6 +59,7 @@ than seven parallel lists. **The framework is the reusable structure; this is on
 | P10 | Gate thresholds | Framework defaults at LOW-tier baseline. |
 | P11 | Proposal limit | **18-page** technical narrative. |
 | P12 | Roadmap horizon | **12–18 month** product roadmap. |
+| P13 | AR 3-27 type & approval | **Innovation/Testing → Innovative Solution**; Partnerships Team recommends, **City Manager** approves each advance. |
 
 ---
 

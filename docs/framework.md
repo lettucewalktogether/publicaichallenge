@@ -18,6 +18,13 @@ The first worked instance — CPD Quality Control Review / residential plan scre
 lives in [`instance-cpd-residential-plan-review.md`](./instance-cpd-residential-plan-review.md).
 It shows the parameters filled in. This document stays generic.
 
+**Governing authority:** every challenge is executed as an **Innovation Partnership
+under KCMO Administrative Regulation 3-27**, which supplies the local legal vehicle,
+the approval chain, and the performance-measure requirement this framework
+operationalizes. See [`authority-ar-3-27.md`](./authority-ar-3-27.md) and §9. The
+federal and municipal references are reference models *under* that authority — not the
+authority itself.
+
 Why "algorithmic": the process is written as a deterministic procedure — inputs,
 ordered stages, explicit decision points, and defined branches (advance / remediate /
 stop) — so that two different departments running two different challenges make the
@@ -68,6 +75,7 @@ after §2 is fixed structure that consumes these values.
 | P10 | **Gate thresholds** | pass criteria per gate | Minimum evidence to advance; defaults in §5.2, tightened for higher risk tier. |
 | P11 | **Proposal limits** | page/format limits | Default: 18-page technical narrative. |
 | P12 | **Roadmap horizon** | duration | Default: 12–18 month product roadmap. |
+| P13 | **AR 3-27 partnership type & approval path** | classification | The Innovation Partnership type (usually *Innovation/Testing* seeking an *Innovative Solution*), routed to the Innovation Partnerships Team → City Manager for approval. See [`authority-ar-3-27.md`](./authority-ar-3-27.md). |
 
 > **Rule:** if a parameter cannot be stated, the challenge is not ready to solicit.
 > An undefined problem (P1) or unassigned owner (P3) fails Gate 0 by definition.
@@ -199,8 +207,10 @@ distribution list.
 ### 6.1 City side
 | Role | Owns | Decision right |
 |------|------|----------------|
+| **City Manager** | Final approval of the Innovation Partnership Agreement (AR 3-27 §6.3.3). | Approves each commitment increase, on the Partnerships Team's recommendation. |
+| **Innovation Partnerships Team** (CMO · Mayor/Council office · Finance · Law · Procurement) | Coordinating, tracking, and recommending all partnerships (AR 3-27 §6.2). | Recommends approval to the City Manager; reports to Council. |
 | **Sponsoring department** | The service outcome (P1/P2). | Whether the delivered service actually solves the problem. |
-| **Department AI Lead** | The challenge on behalf of the department. | Recommends advance/remediate/stop at each gate. |
+| **Department AI Lead** | The challenge on behalf of the department. | Recommends advance/remediate/stop at each gate (up through the Partnerships Team). |
 | **Challenge & process managers** | Solicitation, cadence, fairness, records. | Run the competition and enforce the terms. |
 | **Subject-matter experts (SMEs)** | Ground truth for accuracy and workflow fit. | Validate that output is correct and usable. |
 | **Governance & legal reviewers** | Authority, privacy, records, equity, IP. | Sign off (mandatory at every gate for HIGH tier). |
@@ -251,7 +261,9 @@ scored that is not evidenced.
 ## 8. Data & intellectual property terms (fixed invariants)
 
 These terms are constant across all challenges and protect the city's ability to
-*explain, monitor, correct, and exit.*
+*explain, monitor, correct, and exit.* They are written into the **AR 3-27 Innovation
+Partnership Agreement** — the vehicle that authorizes temporary use of City data and
+facilities (AR 3-27 §3.1) — not left to a handshake.
 
 - **The city maintains control of its data and of the results** produced under the challenge.
 - **The vendor retains its background technology** (what it brought in).
@@ -263,12 +275,33 @@ G5, regardless of performance.
 
 ---
 
-## 9. Federal precedent crosswalk
+## 9. Authority and precedent crosswalk
 
-These are **reference models, not KCMO legal authority.** The city's authority comes
-from its own charter, ordinances, and procurement rules. The precedents share one
-discipline — *define the need, limit the first commitment, evaluate evidence, expand
-only after performance* — which is exactly the invariant in §1.
+There are two tiers here, and they must not be confused:
+
+- **Governing authority (binding):** KCMO's own regulation. This is what makes a
+  challenge lawful and executable.
+- **Reference models (informative):** federal and municipal precedents that share the
+  discipline — *define the need, limit the first commitment, evaluate evidence, expand
+  only after performance* (the invariant in §1). They inform *how* to execute; they are
+  **not** KCMO legal authority.
+
+### 9.0 Governing authority — KCMO AR 3-27 Innovation Partnerships
+
+> **City of Kansas City, Missouri, Administrative Regulation No. 3-27, "Innovation
+> Partnerships"** (approved by City Manager Troy M. Schulte; effective July 23, 2013).
+
+AR 3-27 supplies the **Innovation Partnership Agreement** vehicle (temporary use of City
+data/facilities, §3.1), the **approval chain** (Innovation Partnerships Team →
+City Manager, §6.2 / §6.3.3), the **Gate 0 criteria** (Council-Priority alignment and
+benefit-vs-cost, §6.3.2), and the **performance-measure requirement** (§6.4) that this
+framework's gate ladder operationalizes. Full analysis and crosswalk:
+[`authority-ar-3-27.md`](./authority-ar-3-27.md).
+
+The reference models below operate **under** AR 3-27, filling the parts a 2013 general
+policy leaves open (AI specifics, staged gates, solicitation format).
+
+### 9.1 Federal reference models (from the PPG panel)
 
 | Precedent | What it establishes | Maps to |
 |-----------|--------------------|---------|
@@ -279,28 +312,45 @@ only after performance* — which is exactly the invariant in §1.
 | **NASA COTS** — Space Act Agreements | Funded milestones; pay on completion; end on insufficient progress; separate development from later purchase. | Milestone gates; STOP branch; Phase 2→3 separation. |
 | **SBIR Phase I / II / III** | Feasibility → prototype → commercialization; commitment rises with evidence. | The whole monotonic-commitment staircase (§1, §4). |
 | **GAO-26-107859** (Apr 2026) | Collect and apply AI-acquisition lessons learned. | Phase 0 framing; post-award monitoring. |
-| **Local models** — Long Beach; Miami-Dade Innovation Authority | Concise problem-based challenges; test several vendors against a defined problem (3 of 136 selected). | Challenge format; small cohort of advancing teams. |
-| **D.C. AI Procurement Handbook** (Feb 2025) | Municipal template for responsible AI buying. | Governance readiness pack (§7.2). |
+
+### 9.2 Additional federal reference models (fill legal-mechanism gaps)
+
+| Precedent | Unique contribution | Maps to |
+|-----------|--------------------|---------|
+| **15 U.S.C. §3719** — Prize competitions (America COMPETES) | Government-wide prize authority; default *participant retains IP*; judge conflict-of-interest bars; standard announcement elements. | Announcement structure; scoring-panel integrity; §8 IP default. |
+| **51 U.S.C. §20113** — NASA Space Act Agreement authority | The *legal vehicle* for a funded milestone partnership outside standard procurement. | Analogue for the AR 3-27 Innovation Partnership Agreement (§8). |
+| **FAR Part 12** — commercial products/services | The only model for *buying the proven winner* via streamlined commercial terms. | Phase 3 operating contract. |
+
+### 9.3 Municipal reference models (peer cities)
+
+| Model | Unique contribution | Maps to |
+|-------|--------------------|---------|
+| **D.C. AI Procurement Handbook** | AI-specific + local: risk tiers, vendor disclosure (training data/architecture/limits), contract-embedded monitoring/bias audit, AI data-rights. | Governance Readiness pack (§7.2); risk tier (§3). |
+| **City of Long Beach** — Smart City Challenge | Municipal execution of the challenge front-end; room for unspecified approaches; transparent evaluation. | Solicitation posture (Phase 1). |
+| **Miami-Dade Innovation Authority** | Dedicated challenge-running institution; down-select funnel at scale (3 of 136); funded municipal pilots ($100k each). | Who runs it (§6); cohort sizing (P6); stipend (P8). |
 
 ---
 
 ## 10. Instantiation checklist — running a new challenge
 
 1. **Fill the parameter block** (§2). If any parameter is unstatable, stop — you are not ready.
-2. **Set the risk tier** (§3). Default to LOW/advisory unless the decision is consequential.
-3. **Pass G0 internally** (§5) before spending a dollar of vendor time.
-4. **Publish the problem and the gates**, not a solution (§4, Phase 1; §7.3).
-5. **Run the pipeline** (§4) under the gate logic (§5), with named decision rights (§6).
-6. **Feed each gate with its artifact** (§7). No artifact, no score.
-7. **Hold the terms fixed** (§8). Confirm the exit test before scaling.
-8. **Record everything** — the audit trail is what lets the city explain and defend each advance/stop decision.
+2. **Classify under AR 3-27** (P13) and **forward to the Innovation Partnerships Team** before engaging partners ([`authority-ar-3-27.md`](./authority-ar-3-27.md) §8).
+3. **Set the risk tier** (§3). Default to LOW/advisory unless the decision is consequential.
+4. **Pass G0 internally** (§5) — including AR 3-27 §6.3.2 criteria (Council-Priority alignment, benefit-vs-cost) — before spending a dollar of vendor time.
+5. **Publish the problem and the gates**, not a solution (§4, Phase 1; §7.3).
+6. **Run the pipeline** (§4) under the gate logic (§5), with named decision rights (§6); route each commitment increase to the City Manager for approval (AR 3-27 §6.3.3).
+7. **Feed each gate with its artifact** (§7). No artifact, no score.
+8. **Hold the terms fixed** (§8), written into the Innovation Partnership Agreement. Confirm the exit test before scaling.
+9. **Record everything and file the concluding evaluation** against stated measures with the Partnerships Team (AR 3-27 §6.4) — the audit trail is what lets the city explain and defend each advance/stop decision.
 
 > The goal is not a successful demo. The goal is a service the city can **operate,
 > explain, monitor, and correct** — and exit if it must.
 
 ---
 
-*Sources: CPD Public AI Innovation Challenge mind map; "Purchasing Responsible AI"
-panel talking points (Andrew Ngui, Partners for Public Good / PEN, July 22, 2026),
-including its federal-precedent and staged-gate models. Precedent source URLs are
-listed in the panel talking-points source notes.*
+*Sources: KCMO Administrative Regulation No. 3-27, "Innovation Partnerships" (eff.
+July 23, 2013) — the governing authority; CPD Public AI Innovation Challenge mind map;
+"Purchasing Responsible AI" panel talking points (Andrew Ngui, Partners for Public Good
+/ PEN, July 22, 2026), including its federal-precedent and staged-gate models. Precedent
+source URLs are listed in the panel talking-points source notes and in
+[`authority-ar-3-27.md`](./authority-ar-3-27.md).*

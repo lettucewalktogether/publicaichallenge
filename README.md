@@ -15,12 +15,20 @@ demonstrated. This mirrors the federal staged-acquisition precedents (FAR modula
 contracting, Challenge-Based Acquisition, DARPA prizes, NASA COTS milestones, SBIR
 Phase I/II/III) — used here as reference models, not as KCMO legal authority.
 
+**Governing authority:** challenges run as **Innovation Partnerships under KCMO
+Administrative Regulation 3-27**, which provides the local legal vehicle, approval chain,
+and performance-measure requirement. The federal and municipal precedents are reference
+models under that authority. The full authority stack is recorded in
+[`CLAUDE.md`](./CLAUDE.md).
+
 ## Documents
 
 | File | What it is |
 |------|-----------|
-| [`docs/framework.md`](./docs/framework.md) | **The reusable framework** — parameters, pipeline, unified gate ladder, scoring, roles, terms, and the federal-precedent crosswalk. Start here. |
+| [`docs/framework.md`](./docs/framework.md) | **The reusable framework** — parameters, pipeline, unified gate ladder, scoring, roles, terms, and the authority/precedent crosswalk. Start here. |
+| [`docs/authority-ar-3-27.md`](./docs/authority-ar-3-27.md) | **The governing authority** — KCMO AR 3-27 Innovation Partnerships: the local vehicle, approval chain, criteria, and crosswalk to the framework. |
 | [`docs/instance-cpd-residential-plan-review.md`](./docs/instance-cpd-residential-plan-review.md) | **A worked example** — the CPD residential plan screening / QCR challenge, with the framework's parameters filled in. |
+| [`CLAUDE.md`](./CLAUDE.md) | **Standing authority stack** — the local / state / federal references every future challenge (AI or otherwise) must carry. |
 
 ## How to run a new challenge
 
