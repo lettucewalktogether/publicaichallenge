@@ -59,7 +59,7 @@ the first commitment, evaluate evidence, expand only after performance.*
 - **GAO-26-107859** (Apr 2026) — AI-acquisition lessons learned
 
 **Peer municipalities:**
-- **D.C. AI Procurement Handbook** — risk tiers, vendor disclosure, contract-embedded monitoring
+- **D.C. AI Procurement Handbook** (Feb 2025) — AI notification clause in every IT/services solicitation, vendor AI Factsheet, contract addendum overriding vendor license terms
 - **City of Long Beach** — Smart City Challenge; municipal challenge front-end
 - **Miami-Dade Innovation Authority** — dedicated challenge institution; 3-of-136 funnel; funded pilots
 

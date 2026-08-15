@@ -26,6 +26,7 @@ Supporting:
 | File | What it is |
 |------|-----------|
 | [`docs/announcement-cpd-draft.md`](./docs/announcement-cpd-draft.md) | **The publishable announcement** — Parts 1 + 2 assembled, with an insert register for Procurement. |
+| [`docs/briefing-dc-ai-procurement-and-noam-call.md`](./docs/briefing-dc-ai-procurement-and-noam-call.md) | **DC AI Procurement Handbook analysis** plus draft contract language for embedded AI, model training on City data, and automated decision-making. |
 | [`docs/ar-3-27-assessment.md`](./docs/ar-3-27-assessment.md) | Why AR 3-27 was evaluated and **set aside** as a vehicle. Retained as background. |
 | [`CLAUDE.md`](./CLAUDE.md) | Project memory — standing rules and design precedents. |
 

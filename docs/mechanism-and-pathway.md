@@ -71,6 +71,8 @@ Fill this before solicitation. These are the only values that change between cha
 
 ### 1.1 Risk tier — the one branch
 
+Risk tiering is a KCMO construct. It is not drawn from any single precedent.
+
 | Tier | Definition | Effect |
 |------|-----------|--------|
 | **LOW** | Advisory staff aid. A human makes every consequential decision. No effect on eligibility, enforcement, employment, or access to services. | Baseline thresholds and governance. |
@@ -616,7 +618,7 @@ performance.*
 | **SBIR Phase I/II/III** | Commitment rises with evidence |
 | **15 U.S.C. §3719** — prize competitions | Announcement elements; participant-IP default; judge conflict rules |
 | **FAR Part 12** | Converting a proven pilot into an operating purchase |
-| **D.C. AI Procurement Handbook** | Risk tiers; vendor disclosure; contract-embedded monitoring |
+| **D.C. AI Procurement Handbook** (Feb 2025) | AI notification clause reaching embedded and undisclosed AI; vendor AI Factsheet; contract addendum overriding conflicting vendor license terms |
 | **Long Beach; Miami-Dade Innovation Authority** | Municipal challenge format; down-select funnel; funded pilots |
 | **GAO-26-107859** (Apr 2026) | Applying AI-acquisition lessons learned |
 
