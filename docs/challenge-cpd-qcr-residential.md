@@ -196,6 +196,7 @@ Instance-specific items from the mechanism spec's register (Appendix A). Track t
 | 11 | **Labor consultation**, if represented staff affected | HR | Work-practice change |
 | 12 | **Applicant disclosure and appeal path** | CPD + Law | Applicants affected by screening |
 | 13 | **Liability allocation** for a missed life-safety finding | Law | Domain-specific exposure |
+| 14 | **Housing supply growth evidence** for a possible HUD Sec. 208 Innovation Fund application (Pub. L. 119-101) | Housing policy + CPD | Baseline metrics in item 1 also serve this. See [`note-road-to-housing-act.md`](./note-road-to-housing-act.md). |
 
 ---
 
